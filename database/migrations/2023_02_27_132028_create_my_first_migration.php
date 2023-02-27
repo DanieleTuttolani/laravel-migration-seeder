@@ -16,8 +16,8 @@ return new class extends Migration
             $table->char('code' , 15)->unique();
             $table->char('departure', 80);
             $table->char('arrival', 80);
-            $table->time('departure_H');
-            $table->time('arrival_H');
+            $table->string('departure_H');
+            $table->string('arrival_H');
             $table->smallInteger('Number_of_carriages')->nullable();
             $table->boolean('on_time')->nullable();
             $table->boolean('on_retard')->nullable();
